@@ -102,7 +102,7 @@ int Context::initialize (int argc, const char** argv)
     ////////////////////////////////////////////////////////////////////////////
     //
     // [1] Load the correct config file.
-    //     - Default to ~/.taskrc (ctor).
+    //     - Default to ~/.config/taskrc (ctor).
     //     - Allow command line override rc:<file>
     //     - Allow $TASKRC override.
     //     - Load resultant file.
@@ -126,7 +126,7 @@ int Context::initialize (int argc, const char** argv)
     ////////////////////////////////////////////////////////////////////////////
     //
     // [2] Locate the data directory.
-    //     - Default to ~/.task (ctor).
+    //     - Default to ~/.local/share/task (ctor).
     //     - Allow command line override rc.data.location:<dir>
     //     - Allow $TASKDATA override.
     //     - Inform TDB2 where to find data.
