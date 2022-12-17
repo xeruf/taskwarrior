@@ -67,7 +67,7 @@ static const char* modifierNames[] =
 
 ////////////////////////////////////////////////////////////////////////////////
 Context::Context ()
-: rc_file ("~/.config/taskrc")
+: rc_file ("~/.config/task/taskrc")
 , data_dir ("~/.local/share/task")
 , config ()
 , tdb2 ()
@@ -102,7 +102,7 @@ int Context::initialize (int argc, const char** argv)
     ////////////////////////////////////////////////////////////////////////////
     //
     // [1] Load the correct config file.
-    //     - Default to ~/.config/taskrc (ctor).
+    //     - Default to ~/.config/tas/taskrc
     //     - Allow command line override rc:<file>
     //     - Allow $TASKRC override.
     //     - Load resultant file.
